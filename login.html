@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>登录页面</title>
+<meta name="author" content="DeathGhost" />
+<link rel="stylesheet" type="text/css" href="style/index/login_register.css" tppabs="css/index/style.css" />
+<style>
+body{height:100%;background:#051827;overflow:hidden;}
+canvas{z-index:-1;position:absolute;}
+</style>
+<script src="js/index/jquery-1.8.3.min.js"></script>
+<script src="js/index/verificationNumbers.js" tppabs="js/index/verificationNumbers.js"></script>
+<script src="js/index/Particleground.js" tppabs="js/index/Particleground.js"></script>
+<script>
+$(document).ready(function() {
+  //粒子背景特效
+  $('body').particleground({
+    dotColor: '#28a3cb',
+    lineColor: '#28a3cb'
+  });
+  //验证码
+  createCode();
+});
+</script>
+</head>
+<body>
+<dl class="admin_login">
+ <dt>
+  <img src="images/index/logo_04.png" alt="">
+ </dt>
+ <dt style="margin-top:-80px;">
+  <strong>博客登录平台</strong>
+ </dt>
+ <dd class="user_icon" >
+  <input type="text" placeholder="账号" class="login_txtbx"/>
+ </dd>
+ <dd class="pwd_icon">
+  <input type="password" placeholder="密码" class="login_txtbx"/>
+ </dd>
+ <dd class="val_icon">
+  <div class="checkcode">
+    <input type="text" id="J_codetext" placeholder="验证码" maxlength="4" class="login_txtbx">
+    <canvas class="J_codeimg" id="myCanvas"  onclick="createCode()">
+  </div>
+ </dd>
+ <dd>
+  <input type="button" value="登陆" class="submit_btn"/>
+ </dd>
+ <dd>
+  <span style="float:left;"><a href="reset.html">忘记密码？</a></span>
+  <span>还没有账号？<a href="register.html">立即注册</a></span>
+ </dd>
+</dl>
+</body>
+</html>

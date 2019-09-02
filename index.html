@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/index/index.css">
+    <title>博客首页</title>
+</head>
+<body>
+    <!-- 头部开始 -->
+	<div class="header">
+        <div class="logo">
+            <img src="images/index/logo.png" alt="">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li class="cur"><a href="javascript:;">首页</a></li>
+                <li><a href="list.html">新闻资讯</a></li>
+                <li><a href="">编程学习</a></li>
+                <li><a href="">资源</a></li>
+                <li><a href="">关于我们</a></li>
+            </ul>
+        </div>
+        <p class="login_register"><a href="">登录 </a> |  <a href=""> 注册</a></p>
+        <!-- 登录成功后显示头像 -->
+        <div class="person_box">
+            <img src="images/index/head.jpg" alt="" class="person_head">
+            <div class="person_info">
+                <div class="person_arrow"></div>
+                <ul class="person_list">
+                    <li>
+                        <div class="person_item">
+                            <img src="images/index/person_img_01.png" alt="" class="">
+                            <a href="personal.html">个人中心</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person_item">
+                            <img src="images/index/person_img_02.png" alt="">
+                            <a href="blogging.html">写博客</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person_item">
+                            <img src="images/index/person_img_03.png" alt="">
+                            <a href="javascript:;">退出</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 登录成功后显示头像结束 -->
+    </div>
+    <!-- 头部结束 -->
+    <!-- 内容 -->
+    <div class="index_page">
+        <!-- 轮播 -->
+        <div class="play">
+            <div class="play_main" id="play_main">
+                <ul class="play_photo">
+                    <li class="play_photo_item"><a href="javascript:;"><img src="images/index/banner_01.png" /></a></li>
+                    <li class="play_photo_item"><a href="javascript:;"><img src="images/index/banner_02.jpg" /></a></li>
+                    <li class="play_photo_item"><a href="javascript:;"><img src="images/index/banner_01.png" /></a></li>
+                    <li class="play_photo_item"><a href="javascript:;"><img src="images/index/banner_02.jpg" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播结束 -->
+        <!-- 新闻中心 -->
+        <div class="new">
+            <div class="center">
+                <div class="new_title">新闻中心</div>
+                <ul class="new_main">
+                    <li class="new_item">
+                        <img src="images/index/new_list_01.png" alt="" class="new_item_photo">
+                        <div class="new_item_info">"互联网+民营企业培训会"成功举办。"互联网+民营企业培训会"成功举办。</div>
+                        <div class="new_item_details">了解详情</div>
+                    </li>
+                    <li class="new_item">
+                            <img src="images/index/new_list_02.png" alt="" class="new_item_photo">
+                            <div class="new_item_info">"互联网+民营企业培训会"成功举办。</div>
+                            <div class="new_item_details">了解详情</div>
+                    </li>
+                    <li class="new_item">
+                            <img src="images/index/new_list_03.png" alt="" class="new_item_photo">
+                            <div class="new_item_info">"互联网+民营企业培训会"成功举办。</div>
+                            <div class="new_item_details">了解详情</div>
+                    </li>
+                    <li class="new_item">
+                            <img src="images/index/new_list_04.png" alt="" class="new_item_photo">
+                            <div class="new_item_info">"互联网+民营企业培训会"成功举办。</div>
+                            <div class="new_item_details">了解详情</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 新闻中心结束 -->
+        <!-- 编程学习 -->
+        <div class="programming">
+            <div class="center">
+                <div class="programming_title">编程学习</div>
+                <ul class="programming_label">
+                    <li class="programming_label_item selected"><a href="javascript:;">云计算服务</a></li>
+                    <li class="programming_label_item"><a href="javascript:;">大数据服务</a></li>
+                    <li class="programming_label_item"><a href="javascript:;">云计算服务</a></li>
+                    <li class="programming_label_item"><a href="javascript:;">大数据服务</a></li>
+                    <li class="programming_label_item"><a href="javascript:;">云计算服务</a></li>
+                    <li class="programming_label_item"><a href="javascript:;">大数据服务</a></li>
+                </ul>
+                <div class="programming_content">
+                    <div class="programming_content_list" style="display: block">
+                        <div class="programming_content_info" id="programming_content_info_1">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="programming_content_list">
+                        <div class="programming_content_info" id="programming_content_info_2">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>>
+                        </div>
+                    </div>
+                    <div class="programming_content_list">
+                        <div class="programming_content_info" id="programming_content_info_3">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="programming_content_list">
+                        <div class="programming_content_info" id="programming_content_info_4">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="programming_content_list">
+                        <div class="programming_content_info" id="programming_content_info_5">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">云计算服务云计算服务云计算服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="programming_content_list">
+                        <div class="programming_content_info" id="programming_content_info_6">
+                            <ul class="programming_play">
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                                <li class="programming_play_item">
+                                    <img src="images/index/programming_list_01.png" alt="" class="programming_item_photo">
+                                    <div class="programming_item_box">
+                                        <div class="programming_item_info">大数据服务大数据服务大数据服务</div>
+                                        <div class="programming_item_details">了解详情</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 编程学习结束 -->
+        <!-- 资源 -->
+        <div class="resources">
+            <div class="center">
+                <div class="resources_title">资源</div>
+                <div class="resources_main">
+                    <div class="resources_left">
+                        <div class="resources_content_title">
+                            <div class="resources_content_name">大数据</div>
+                            <a href="javascript:;" class="resources_content_more">more+</a>
+                        </div>
+                        <ul class="resources_content_list">
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据访问技术 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据可视化技术 - 中级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据可视化技术 - 中级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之大数据框架技术 - 高级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之就业实训 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resources_right">
+                        <div class="resources_content_title">
+                            <div class="resources_content_name">大数据</div>
+                            <a href="javascript:;" class="resources_content_more">more+</a>
+                        </div>
+                        <ul class="resources_content_list">
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据访问技术 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据可视化技术 - 中级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之数据可视化技术 - 中级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之大数据框架技术 - 高级篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之就业实训 - 基础篇</a>
+                            </li>
+                            <li class="resources_content_item">
+                                <div class="resources_content_spot"></div>
+                                <a href="javascript:;" class="resources_content_info">零基础大数据开发工程师之必知必会 - 基础篇</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 资源结束 -->
+    </div>
+    <!-- 内容结束 -->
+    <!-- 尾部 -->
+    <div class="footer">
+        <ul class="content_list">
+            <li><a href="">首页</a>-</li>
+            <li><a href="">新闻资讯</a>-</li>
+            <li> <a href="">编程学习</a>-</li>
+            <li><a href="">资源</a>-</li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+        <span class="content_record">Copyright 2018 www.czll.cn 博客 京ICP备0101010101号 </span>
+    </div>
+    <!-- 尾部结束 -->
+    <script type="text/javascript" src="js/index/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/index/ft-carousel.min.js"></script>
+    <script type="text/javascript" src="js/index/jquery.kxbdmarquee.js"></script>
+    <script src="js/index/js.js"></script>
+</body>
+</html>

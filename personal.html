@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/personal/personal.css">
+    <script type="text/javascript" src="js/personal/jquery-1.8.3.min.js"></script>
+    <title>个人中心</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="personal_header">
+        <div class="header_box">
+            <div class="logo">
+                <img src="images/index/logo.png" alt="">
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="list.html">新闻资讯</a></li>
+                    <li><a href="">编程学习</a></li>
+                    <li><a href="">资源</a></li>
+                    <li><a href="">关于我们</a></li>
+                </ul>
+            </div>
+            <p class="login_register"><a href="">登录 </a> |  <a href=""> 注册</a></p>
+            <!-- 登录成功后显示头像 -->
+            <div class="person_box">
+                <img src="images/index/head.jpg" alt="" class="person_head">
+                <div class="person_info">
+                    <div class="person_arrow"></div>
+                    <ul class="person_list">
+                        <li>
+                            <div class="person_item">
+                                <img src="images/index/person_img_01.png" alt="" class="">
+                                <a href="personal.html">个人中心</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person_item">
+                                <img src="images/index/person_img_02.png" alt="">
+                                <a href="blogging.html">写博客</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="person_item">
+                                <img src="images/index/person_img_03.png" alt="">
+                                <a href="javascript:;">退出</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 登录成功后显示头像结束 -->
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 内容 -->
+    <div class="personal_page">
+        <div class="center">
+            <div class="title">
+                <div class="title_rectangle"></div>
+                <div class="title_line"></div>
+                <div class="title_name">个人中心</div>
+            </div>
+            <!-- 左边菜单栏 -->
+            <div class="left">
+                <ul class="left_nav">
+                    <li class="left_nav left_nav_selected"><a href="personal.html">个人资料</a></li>
+                    <li class="left_nav"><a href="personal_blog.html">我的博客</a></li>
+                    <li class="left_nav"><a href="personal_collection.html">我的收藏</a></li>
+                <!--  <li>我的评论</li> -->
+                </ul>
+            </div>
+            <!-- 左边菜单栏结束 -->
+            <div class="right">
+                <div class="right_content">
+                    <div class="right_content_theme">个人资料</div>
+                    <!-- 头像 -->
+                    <form action="" class="right_content_head">
+                        <img src="images/personal/head.jpg" class="showImg" />
+                        <input type="file" name="file" class="chooseImage" />
+                        <p class="chooseImageWord">修改头像</p>
+                    </form>
+                    <!-- 头像结束 -->
+                    <!-- 个人信息 -->
+                    <ul class="right_content_info">
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;用户ID:
+                            <input type="text" value="bk64576289" readonly="readonly" />
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;昵称:
+                            <input type="text" value="尤它" readonly="readonly" />
+                        </li>
+                        <li>真实姓名:
+                            <input type="text" value="大西瓜" readonly="readonly" />
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别:
+                            <input type="text" value="女" readonly="readonly" />
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出生:
+                            <input type="text" value="1997-2-10" readonly="readonly" />
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话:
+                            <input type="text" value="17765671163" readonly="readonly" />
+                        </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱:
+                            <input type="text" value="17765671163@163.com" readonly="readonly" />
+                        </li>
+                        <li><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简介:</span>
+                            <div class="brief_word">
+                                vbnkfvjfdb但是的古城堡都被五百担保金额为会变成放入的东
+                                北文化cdbdsjcbsdjvbjsdvbcdscnjdfnvjrnvjeana
+                                jkan jknj充电宝v日军侧背骄傲333333333333333333
+                                3333333333你好和好好孬好你好好你好你好你好你好你好你好 
+                            </div>
+                        </li>
+                        <p class="modify">修改资料</p>
+                    </ul>
+                    <!-- 个人信息结束 -->
+                    <!-- 修改资料 -->
+                    <ul class="modify_info">
+                        <li>修改资料:</li>
+                        <li><i>*</i>用户ID:
+                            <input type="text" value="bk64576289" readonly="readonly" />
+                        </li>
+                        <li>昵称:
+                            <input type="text" value="尤它" />
+                        </li>
+                        <li>真实姓名:
+                            <input type="text" value="大西瓜" />
+                        </li>
+                        <li><span class="li_sex">性别:</span>
+                            <div class="radio_sex_border">
+                                <span class="radio_sex"><input type="radio" name="sex" value="male" class="sex" checked="checked">女</span>
+                                <span class="radio_sex"><input type="radio" name="sex" value="female" class="sex">男</span>
+                            </div>
+                        </li>
+                        <li>出生:
+                            <input type="text" id="birthday" placeholder="请选择日期" value="1997-2-10">
+                        </li>
+                        <li>电话:
+                            <input type="text" value="17765671163" />
+                        </li>
+                        <li>邮箱:
+                            <input type="text" value="17765671163@163.com" />
+                        </li>
+                        <li><span class="li_brief">简介:</span>
+                            <textarea cols="19"  rows="5"  readonly="readonly">vbnkfvjfdbgvjkdfhbjfdjk给v反对v和中国v的话
+                                ygyurfyuigyubntecr7itbwearg7t7erbucryuievbu
+                                rvfyubfgyuaefcvbtygfxhbgfxhbnfzhnbhbnfnbghbngfhbnzzzzzzzzzzzzzzzzzzz
+                            </textarea>
+                        </li>
+                        <li><button class="modify_close">提交</button></li>
+                        <li><p>（*表示不可修改，简介请填写在200字以内）</p></li>
+                    </ul>
+                    <!-- 修改资料结束 -->
+                    <p class="tip_box">修改成功</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容结束 -->
+    <!-- 尾部 -->
+    <div class="footer">
+        <ul class="content_list">
+            <li><a href="">首页</a>-</li>
+            <li><a href="">新闻资讯</a>-</li>
+            <li> <a href="">编程学习</a>-</li>
+            <li><a href="">资源</a>-</li>
+            <li><a href="">关于我们</a></li>
+        </ul>
+        <span class="content_record">Copyright 2018 www.czll.cn 博客 京ICP备0101010101号 </span>
+    </div>
+    <!-- 尾部结束 -->
+    <!-- 弹窗透明背景 -->
+    <div class="wall"></div>
+    <!-- 弹窗透明背景结束 -->
+    <script type="text/javascript" src="js/personal/index.js"></script>
+    <script type="text/javascript" src="js/index/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/index/ft-carousel.min.js"></script>
+    <script type="text/javascript" src="js/index/jquery.kxbdmarquee.js"></script>
+    <script type="text/javascript" src="js/personal/laydate.js"></script>
+    <script src="js/index/js.js"></script>
+</body>
+</html>

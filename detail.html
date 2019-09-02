@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻资讯</title>
+	<link rel="stylesheet" href="style/index/index.css">
+	<script src="js/index/jquery.min.js" tppabs="js/jquery.min.js"></script>
+	<script src="js/index/js.js" tppabs="js/js.js"></script>
+</head>
+<body>
+	<!-- 头部开始 -->
+	<div class="header">
+		<div class="logo">
+			<img src="images/index/logo.png" alt="">
+		</div>
+		<div class="navigation">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="cur"><a href="list.html">新闻资讯</a></li>
+				<li><a href="">编程学习</a></li>
+				<li><a href="">资源</a></li>
+				<li><a href="">关于我们</a></li>
+			</ul>
+		</div>
+		<p class="login_register"><a href="">登录 </a> |  <a href=""> 注册</a></p>
+		<!-- 登录成功后显示头像 -->
+		<div class="person_box">
+			<img src="images/index/head.jpg" alt="" class="person_head">
+			<div class="person_info">
+				<div class="person_arrow"></div>
+				<ul class="person_list">
+					<li>
+						<div class="person_item">
+							<img src="images/index/person_img_01.png" alt="" class="">
+							<a href="personal.html">个人中心</a>
+						</div>
+					</li>
+					<li>
+						<div class="person_item">
+							<img src="images/index/person_img_02.png" alt="">
+							<a href="blogging.html">写博客</a>
+						</div>
+					</li>
+					<li>
+						<div class="person_item">
+							<img src="images/index/person_img_03.png" alt="">
+							<a href="javascript:;">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 登录成功后显示头像结束 -->
+	</div>
+	<!-- 头部结束 -->
+	<!-- 二级标题开始 -->
+	<div class="title_bg">
+		<div class="title_box">
+			<p class="p_left">新闻动态</p>
+			<div class="title_arrow"></div>
+			<p class="p_right"><span>首页</span> / 新闻动态</p>
+		</div>
+	</div>
+	<!-- 二级标题结束 -->
+	<div class="list_page">
+		<div class="detail">
+			<span class="title">czll博客正式上线</span>
+			<p class="time">2018-05-08</p>
+			<div class="line"></div>
+			<div class="text">
+				先Flexbox是什么？它是Bootstrap4新出的一个布局格式，对移动端开发非常方便。
+说一下我为什么要提取Flexbox。有需求才有动力，首先是需求，最近在开发一个移动端适配的网站，使用了materi-ui框架，基于React。使用materi-ui时，已经内置了许多样式，但是bootstrap的一些多余样式会影响一些现有样式，而那些样式对我又没啥用。另外Flex对于移动端布局开发非常适合，这次正好也拿来练练手。
+
+移动端开发是趋势，随着移动端的发展，BootStrap也出了新版本4，不过现在还是alpha版本，还没正式推出。
+
+其中一个比较大的改进便是Flexbox Grid系统。
+
+BootStrap原本最常用的布局栅格化系统在做响应式开发的时候比较方便，但是只针对于移动端开发的时候并没有多大用处了，流行的Flex布局应用越来越广泛。
+
+在Founation中，看到过有了这种Flex布局，它就是适应手机开发的框架。后来Bootstrap4也增加了这块。
+
+那么Flexbox Grid系统相比之前什么改进呢？请看官方文档实例。
+
+Flexbox Grid
+
+P.S 别去上什么中文网，全是错误，实例结果有问题。不想吐槽，一开始我还以为是Flexbox Grid设计不科学。
+准备工作
+
+首先下载BootStrap V4。
+
+Bootstrap V4
+
+目前最新版还是alpha版本，如链接失效，请移步官网。
+
+BootStrap
+
+然后你需要安装了node，gulp，自行下载即可。
+
+gulp
+
+开始抽取
+
+下载之后打开Bootstrap源代码文件夹，找到scss目录，可以看到如下的结构。
+
+QQ20161029-0@2x
+
+mixins是一些可调用的组件，本身编译不会产生任何结果。utilities是一些公用的包，比如我们要抽取的Flex就在这里面。
+
+外面的这么多是一些公用的基本组件。
+
+通过官方文档可以发现：
+
+If you’re familiar with modifying variables in Sass—or any other CSS preprocessor—you’ll be right at home to move into flexbox mode.
+Open the _variables.scss file and find the $enable-flex variable.
+Change it from false to true.
+Recompile, and done!
+Alternatively, if you don’t need the source Sass files, you may swap the default Bootstrap compiled CSS with the compiled flexbox variation. Head to the download page for more information.
+如果我们想要添加Flex组件，还需要将这个变量更改，即将$enable-flex改成true才可以，默认是false。
+
+在源代码中我们可以发现已经有了一个bootstrap-flex.scss的文件，然而这里面发现直接引入了bootstrap的所有代码，这并不是我们想要的，它可能会复写一些基本样式，会影响我们的工程。我们想要的是单独把Flex部分抽离出来。
+
+所以我们自己新建一个 bootstrap-flex.scss的空文件。
+
+首先将变量改为true
+
+
+$enable-flex: true;
+1
+$enable-flex: true;
+然后阅读源码可以发现有两个公用的scss文件是必须引入的。
+
+variables和breakpoints，我们先将他们引入。
+说一下我为什么要提取Flexbox。有需求才有动力，首先是需求，最近在开发一个移动端适配的网站，使用了materi-ui框架，基于React。使用materi-ui时，已经内置了许多样式，但是bootstrap的一些多余样式会影响一些现有样式，而那些样式对我又没啥用。另外Flex对于移动端布局开发非常适合，这次正好也拿来练练手。
+
+移动端开发是趋势，随着移动端的发展，BootStrap也出了新版本4，不过现在还是alpha版本，还没正式推出。
+
+其中一个比较大的改进便是Flexbox Grid系统。
+
+BootStrap原本最常用的布局栅格化系统在做响应式开发的时候比较方便，但是只针对于移动端开发的时候并没有多大用处了，流行的Flex布局应用越来越广泛。
+
+在Founation中，看到过有了这种Flex布局，它就是适应手机开发的框架。后来Bootstrap4也增加了这块。
+
+那么Flexbox Grid系统相比之前什么改进呢？请看官方文档实例。
+
+Flexbox Grid
+
+P.S 别去上什么中文网，全是错误，实例结果有问题。不想吐槽，一开始我还以为是Flexbox Grid设计不科学。
+准备工作
+
+首先下载BootStrap V4。
+
+Bootstrap V4
+
+目前最新版还是alpha版本，如链接失效，请移步官网。
+
+BootStrap
+
+然后你需要安装了node，gulp，自行下载即可。
+
+gulp
+
+开始抽取
+
+下载之后打开Bootstrap源代码文件夹，找到scss目录，可以看到如下的结构。
+
+QQ20161029-0@2x
+
+mixins是一些可调用的组件，本身编译不会产生任何结果。utilities是一些公用的包，比如我们要抽取的Flex就在这里面。
+
+外面的这么多是一些公用的基本组件。
+
+通过官方文档可以发现：
+
+If you’re familiar with modifying variables in Sass—or any other CSS preprocessor—you’ll be right at home to move into flexbox mode.
+Open the _variables.scss file and find the $enable-flex variable.
+Change it from false to true.
+Recompile, and done!
+Alternatively, if you don’t need the source Sass files, you may swap the default Bootstrap compiled CSS with the compiled flexbox variation. Head to the download page for more information.
+如果我们想要添加Flex组件，还需要将这个变量更改，即将$enable-flex改成true才可以，默认是false。
+
+在源代码中我们可以发现已经有了一个bootstrap-flex.scss的文件，然而这里面发现直接引入了bootstrap的所有代码，这并不是我们想要的，它可能会复写一些基本样式，会影响我们的工程。我们想要的是单独把Flex部分抽离出来。
+
+所以我们自己新建一个 bootstrap-flex.scss的空文件。
+
+首先将变量改为true
+
+
+$enable-flex: true;
+1
+$enable-flex: true;
+然后阅读源码可以发现有两个公用的scss文件是必须引入的。
+
+variables和breakpoints，我们先将他们引入。
+			</div>
+		</div>
+		<div class="hot">
+			<p>热门动态</p>
+			<ul>
+				<li>
+				<a href="">ZELL博客正式上线</a>
+				<span class="data">2018-06-06</span>
+				</li>
+				<li>
+				<a href="">ZELL博客正式上线</a>
+				<span class="data">2018-06-06</span>
+				</li>
+				<li>
+				<a href="">ZELL博客正式上线</a>
+				<span class="data">2018-06-06</span>
+				</li>
+				<li>
+				<a href="">ZELL博客正式上线</a>
+				<span class="data">2018-06-06</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="comment">
+		<div class="description"><span>发布评论</span></div>
+		<div class="content">
+			<span>内容：</span>
+			<!-- <input type="textarea" class="textarea"> -->
+			<textarea name="" id="" class="textarea"></textarea>
+			<input type="button" value="提交" class="comment_btn">
+		</div>
+		<div class="line"></div>
+		<div class="comment_list">
+			<ul class="comment_con">
+				<li>
+					<div class="user_comment">
+						<img src="./images/index/default_avatar.png" alt="">
+						<span class="name">瓜哥：</span>
+						<p>这个文章写得太好了！这个文章写得太好了！这个文章写得太好了！这个文章写得太好了！这个文章写得太好了！</p>
+						<div class="re_time">
+							<span class="time">2018-02-02 00:14:35</span>
+							<a href="javascript:" class="reply_click">回复</a>
+							<a href="javascript:" class="delete_click">删除</a>
+						</div>
+						<div class="reply_input">
+							<textarea name="" id="" ></textarea>
+							<input type="button" class="btn" value="发送">
+						</div>
+					</div>
+					<div class="user_reply">
+						<div class="reply">
+							<img src="./images/index/default_avatar.png" alt="">
+							<span class="user_name">瓜哥</span><span class="reply_name">@诗诗：</span>
+							<p>个文章写得太好了！这个文章写得太好了！这个文章写得太好了！是啊是啊，写得真的是太好了</p>
+							<div class="re_time">
+								<span class="time">2018-02-02 00:14:35</span>
+								<a href="javascript:" class="reply_click">回复</a>
+								<a href="javascript:" class="delete_click">删除</a>
+							</div>
+							<div class="reply_input">
+								<textarea name="" id="" ></textarea>
+								<input type="button" class="btn" value="发送">
+							</div>
+						</div>
+						<div class="reply">
+							<img src="./images/index/default_avatar.png" alt="">
+							<span class="user_name">瓜哥</span><span class="reply_name">@诗诗：</span>
+							<p>个文章写得太好了！这个文章写得太好了！这个文章写得太好了！是啊是啊，写得真的是太好了</p>
+							<div class="re_time">
+								<span class="time">2018-02-02 00:14:35</span>
+								<a href="javascript:" class="reply_click">回复</a>
+								<a href="javascript:" class="delete_click">删除</a>
+							</div>
+							<div class="reply_input">
+								<textarea name="" id="" ></textarea>
+								<input type="button" class="btn" value="发送">
+							</div>	
+						</div>
+					</div>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="footer">
+		<ul class="content_list">
+			<li><a href="">首页</a>-</li>
+			<li><a href="">新闻资讯</a>-</li>
+			<li> <a href="">编程学习</a>-</li>
+			<li><a href="">资源</a>-</li>
+			<li><a href="">关于我们</a></li>
+		</ul>
+		<span class="content_record">Copyright 2018 www.czll.cn 博客 京ICP备0101010101号 </span>
+	</div>
+</body>
+</html>

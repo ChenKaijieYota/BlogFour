@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>注册页面</title>
+<meta name="author" content="DeathGhost" />
+<link rel="stylesheet" type="text/css" href="style/index/login_register.css" tppabs="css/index/login_register.css" />
+<style>
+body{height:100%;background:#051827;overflow:hidden;}
+canvas{z-index:-1;position:absolute;}
+</style>
+<script src="js/index/jquery-1.8.3.min.js"></script>
+<script src="js/index/verificationNumbers.js" tppabs="js/index/verificationNumbers.js"></script>
+<script src="js/index/Particleground.js" tppabs="js/index/Particleground.js"></script>
+<script>
+$(document).ready(function() {
+  //粒子背景特效
+  $('body').particleground({
+    dotColor: '#28a3cb',
+    lineColor: '#28a3cb'
+  });
+  //验证码
+  createCode();
+  //测试提交，对接程序删除即可
+});
+</script>
+</head>
+<body>
+<dl class="admin_login">
+  <dt>
+    <img src="images/index/logo_04.png" alt="">
+ </dt>
+ <dt style="margin-top:-80px;">
+  <strong>博客注册平台</strong>
+ </dt>
+ <dd class="email_icon" >
+  <input type="text" placeholder="邮箱账号" class="login_txtbx"/>
+  <input type="button" value="获取验证码" class="login_btn">
+ </dd>
+ <dd class="ver_icon" >
+  <input type="text" placeholder="动态验证码" class="login_txtbx"/>
+ </dd>
+ <dd class="user_icon" >
+  <input type="text" placeholder="账号" class="login_txtbx"/>
+ </dd>
+ <dd class="pwd_icon">
+  <input type="password" placeholder="密码" class="login_txtbx"/>
+ </dd>
+ <dd class="pwd_icon">
+  <input type="password" placeholder="确认密码" class="login_txtbx"/>
+ </dd>
+ <dd>
+  <input type="button" value="注册" class="submit_btn"/>
+ </dd>
+ <dd>
+  <span>已有账号？<a href="login.html">去登录</a></span>
+ </dd>
+</dl>
+</body>
+</html>

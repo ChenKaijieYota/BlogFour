@@ -1,0 +1,165 @@
+.reset_box {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  margin: 0 auto;
+}
+.reset_box .lock_title {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  background: url("../../images/index/lock_03.png") no-repeat 320px center;
+}
+.reset_box .lock_title span {
+  display: block;
+  line-height: 120px;
+  text-align: center;
+}
+.reset_box .confirm {
+  float: left;
+  width: 220px;
+  height: 36px;
+  padding-left: 140px;
+  margin: 20px 20px;
+  position: relative;
+}
+.reset_box .confirm .block {
+  width: 200px;
+  height: 36px;
+  background: #051827;
+}
+.reset_box .confirm .block p {
+  color: white;
+  line-height: 36px;
+}
+.reset_box .confirm .arrow {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: -16px;
+  z-index: 2;
+  border: 18px solid transparent;
+  border-left-color: #051827;
+}
+.reset_box .reset {
+  float: left;
+  width: 220px;
+  height: 36px;
+  margin: 20px -15px;
+  position: relative;
+}
+.reset_box .reset .re_block {
+  width: 200px;
+  height: 36px;
+  position: absolute;
+  left: -20px;
+  background: #F8F4E9;
+}
+.reset_box .reset .re_block p {
+  padding-left: 20px;
+  color: #000;
+  line-height: 36px;
+}
+.reset_box .reset .re_arrow {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  z-index: 1;
+  border: 18px solid transparent;
+  border-left-color: #fff;
+}
+.reset_box .ipt_box {
+  position: absolute;
+  top: 200px;
+  left: 240px;
+  width: 405px;
+  height: 250px;
+}
+.reset_box .ipt_box p {
+  font-size: 14px;
+  position: absolute;
+  left: 60px;
+  top: -10px;
+}
+.reset_box .ipt_box .email_txt {
+  margin-top: 30px;
+  width: 250px;
+  height: 35px;
+  border: 1px solid #051827;
+}
+.reset_box .ipt_box .email_btn {
+  margin-top: -15px;
+  margin-left: -100px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background: #051827;
+  color: #fff;
+}
+.reset_box .ipt_box .verify {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 100px;
+  height: 35px;
+  border: 1px solid #051827;
+}
+.reset_box .ipt_box .next {
+  width: 95px;
+  height: 40px;
+  background: #051827;
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #051827;
+}
+.reset_box .ret_pwd {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 405px;
+  height: 250px;
+}
+.reset_box .ret_pwd .email_txt {
+  margin-top: 15px;
+  margin-left: 27px;
+  width: 250px;
+  height: 35px;
+  border: 1px solid #051827;
+}
+.reset_box .ret_pwd .password {
+  position: absolute;
+  top: 75px;
+  margin-left: 15px;
+  width: 250px;
+  height: 35px;
+  border: 1px solid #051827;
+}
+.reset_box .ret_pwd .sure_password {
+  position: absolute;
+  top: 135px;
+  margin-left: 3px;
+  width: 250px;
+  height: 35px;
+  border: 1px solid #051827;
+}
+.reset_box .ret_pwd button {
+  width: 95px;
+  height: 40px;
+  background: #051827;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #051827;
+}
+.reset_box .ret_pwd p {
+  font-size: 12px;
+  line-height: 60px;
+}
